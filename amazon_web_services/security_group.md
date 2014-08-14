@@ -1,8 +1,6 @@
 # Security Group
 
-#### 2.6 - Security
-##### 2.6.1 - Security Groups
-######　Description
+#### Description
 A [Security Group](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-network-security.html) is a simplified packet-filtering firewall, helping you to control the traffic through your infrastructure
 
 Note that this basic level security is a first and mandatory step to make an infrastructure secure, it should not be considered as sufficient security for building a secure infrastructure<br />
@@ -21,7 +19,7 @@ The rules can defined as following:
 The following instructions have been realized using a VPC Stack<br />
 For a normal Stack, the instructions will be similar, however remember that it is not possible to define outgoing rules in normal Stacks, and we recommend you to setup your own firewall on every instance when using the normal Stacks
 
-######Default Security Group
+#### Default Security Group
 A default Security Group is automatically generated when creating a new Stack<br />
 All instances added to this Stack will automatically be placed in this Security Group
 
@@ -32,7 +30,7 @@ You can find and edit the Security Groups in the Stack or the instance propertie
 The Default Security Group already contains one rule, allowing all incoming TCP traffic on port 22 (SSH)<br />
 This rule is mandatory if you want to manage your instance but you can reduce the IP range if you want to limit the users who can manage your instance
 
-######Create a Custom Security Group
+#### Create a Custom Security Group
 If you want to establish different rules for your instances, you need to create some custom Security Groups. You can them define, for each of them, the outgoing and incoming rules
 
 To create a custom Security Group, you can click on 'Create new Security Group' just under the Security Groups list (instance or Stack properties, right panel)
@@ -44,7 +42,7 @@ We created two custom Security Groups for this example
 
 ![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_stack_sgcust.png)
 
-######Associate a Custom Security Group
+#### Associate a Custom Security Group
 Once the custom Security Group is created, you can now add the instances inside the Security Group<br />
 To do so, go on each instances properties, then Security Groups, tick the security group of your choice, then un-tick the DefaultSG
 
@@ -54,7 +52,7 @@ See [AWS Security Groups documentation](http://docs.aws.amazon.com/AWSEC2/latest
 
 ![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_stack_sginst.png)
 
-######Define Security Rules
+#### Define Security Rules
 You are now ready to create rules in your Security Groups
 
 To do so, click on the right arrow on the right side of the Security Group you want to edit
