@@ -263,14 +263,14 @@ Click on "Add a State" to add your first state.
 		module.exports = config;
 
 
-8. We setup mysql and forever using npm<br />
+9. We setup mysql and forever using npm<br />
 
 	npm -> <br />
 	name: <br />
 	`mysql`<br />
 	`forever`<br />
 
-9. We will be using Forever to keep Ghost alive in background.
+10. We will be using Forever to keep Ghost alive in background.
 
 	file -> <br />
 	path: `/var/www/starter.sh` <br />
@@ -284,7 +284,7 @@ Click on "Add a State" to add your first state.
     		NODE_ENV=production forever start --sourceDir /var/www index.js >> /var/log/nodelog.txt 2>&1
 		fi
 
-10. We want to ensure the owner of www is always the right one.
+11. We want to ensure the owner of www is always the right one.
 
 	dir -> <br />
 	path: `/var/www` <br />
@@ -292,7 +292,7 @@ Click on "Add a State" to add your first state.
 	user: `www-data` <br />
 	recursive: `true`
 
-11. Run nginx on startup, and ensure tu restart the service if the configuration files has been edited.
+12. Run nginx on startup, and ensure tu restart the service if the configuration files has been edited.
 
 	service -> <br />
 	name: `nginx` <br />
@@ -300,7 +300,7 @@ Click on "Add a State" to add your first state.
 	`/etc/nginx.conf`<br />
 	`/etc/nginx/sites-available/ghost.conf`
 
-12. Execute start script
+13. Execute start script
 
 	cmd -> <br />
 	cmd: `bash starter.sh && touch /dev/shm/ghost_starter.done` <br />
