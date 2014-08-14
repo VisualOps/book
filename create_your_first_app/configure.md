@@ -49,11 +49,16 @@ Click on "Add a State" to add your first state.
 	content:
 
     ```
+    create database ghosttest;
     create database ghostdev;
     create database ghost;
     create user 'ghost'@'localhost' identified by 'your-password';
     grant all privileges on ghost.* to 'ghost'@'localhost';
     grant all privileges on ghostdev.* to 'ghost'@'localhost';
+    grant all privileges on ghosttest.* to 'ghost'@'localhost';
+    SET PASSWORD FOR 'root'@'localhost' = PASSWORD('your-root-password');
+    SET PASSWORD FOR 'root'@'127.0.0.1' = PASSWORD('your-root-password');
+    SET PASSWORD FOR 'root'@'%' = PASSWORD('your-root-password');
     flush privileges;
     quit
     ```
@@ -110,14 +115,162 @@ Click on "Add a State" to add your first state.
 	cwd: `/var/www`<br />
 	if-path-absent: `/bootstrap/ghost_setup.done`
 
-8. We setup mysql and forever using npm<br />
+8. Let's configure Ghost to use our previously setup Mysql database. (Note that you can replace `@{self.PublicIp}` by your domain name)
+
+	file -> <br />
+	path: `/var/www/config.js` <br />
+	content:
+
+		// # Ghost Configuration
+		// Setup your Ghost install for various environments
+		// Documentation can be found at http://support.ghost.org/config/
+
+		var path = require('path'),
+		    config;
+
+		config = {
+		    // ### Development **(default)**
+		    development: {
+		        // The url to use when providing links to the site, E.g. in RSS and email.
+		        url: 'http://@{self.PublicIp}',
+
+		        // Example mail config
+		        // Visit http://support.ghost.org/mail for instructions
+		        // ```
+		        //  mail: {
+		        //      transport: 'SMTP',
+		        //      options: {
+		        //          service: 'Mailgun',
+		        //          auth: {
+		        //              user: '', // mailgun username
+		        //              pass: ''  // mailgun password
+		        //          }
+		        //      }
+		        //  },
+		        // ```
+
+		        database: {
+		            client: 'mysql',
+		            connection: {
+		                host: '127.0.0.1',
+		                user: 'ghost',
+    		            password: 'your-password',
+    		            database: 'ghostdev',
+                		charset: 'utf8'
+		            },
+		            debug: false
+		        },
+		        server: {
+		            // Host to be passed to node's `net.Server#listen()`
+		            host: '127.0.0.1',
+		            // Port to be passed to node's `net.Server#listen()`, for iisnode set this to `process.env.PORT`
+		            port: '2368'
+		        },
+		        paths: {
+    		        contentPath: path.join(__dirname, '/content/')
+		        }
+		    },
+
+		    // ### Production
+		    // When running Ghost in the wild, use the production environment
+		    // Configure your URL and mail settings here
+		    production: {
+		        url: 'http://@{self.PublicIp}',
+		        mail: {},
+		        database: {
+		            client: 'mysql',
+		            connection: {
+		                host: '127.0.0.1',
+		                user: 'ghost',
+		                password: 'your-password',
+		                database: 'ghost',
+		                charset: 'utf8'
+		            },
+		            debug: false
+		        },
+		        server: {
+		            // Host to be passed to node's `net.Server#listen()`
+		            host: '127.0.0.1',
+		            // Port to be passed to node's `net.Server#listen()`, for iisnode set this to `process.env.PORT`
+		            port: '2368'
+		        }
+		    },
+
+		    // **Developers only need to edit below here**
+
+		    // ### Testing
+		    // Used when developing Ghost to run tests and check the health of Ghost
+		    // Uses a different port number
+		    testing: {
+		        url: 'http://127.0.0.1:2369',
+		        database: {
+		            client: 'sqlite3',
+		            connection: {
+		                filename: path.join(__dirname, '/content/data/ghost-test.db')
+		            }
+		        },
+		        server: {
+		            host: '127.0.0.1',
+		            port: '2369'
+		        },
+		        logging: false
+		    },
+
+		    // ### Testing MySQL
+		    // Used by Travis - Automated testing run through GitHub
+		    'testing-mysql': {
+		        url: 'http://127.0.0.1:2369',
+		        database: {
+		            client: 'mysql',
+		            connection: {
+		                host: '127.0.0.1',
+		                user: 'ghost',
+		                password: 'your-password',
+		                database: 'ghost',
+		                charset: 'utf8'
+		            }
+		        },
+		        server: {
+		            host: '127.0.0.1',
+		            port: '2369'
+		        },
+		        logging: false
+		    },
+
+		    // ### Testing pg
+		    // Used by Travis - Automated testing run through GitHub
+		    'testing-pg': {
+		        url: 'http://127.0.0.1:2369',
+		        database: {
+		            client: 'pg',
+		            connection: {
+		                host     : '127.0.0.1',
+		                user     : 'postgres',
+		                password : '',
+		                database : 'ghost_testing',
+		                charset  : 'utf8'
+		            }
+		        },
+		        server: {
+		            host: '127.0.0.1',
+		            port: '2369'
+		        },
+		        logging: false
+		    }
+		};
+
+		// Export config
+		module.exports = config;
+
+
+9. We setup mysql and forever using npm<br />
 
 	npm -> <br />
 	name: <br />
 	`mysql`<br />
 	`forever`<br />
 
-9. We will be using Forever to keep Ghost alive in background.
+10. We will be using Forever to keep Ghost alive in background.
 
 	file -> <br />
 	path: `/var/www/starter.sh` <br />
@@ -131,7 +284,7 @@ Click on "Add a State" to add your first state.
     		NODE_ENV=production forever start --sourceDir /var/www index.js >> /var/log/nodelog.txt 2>&1
 		fi
 
-10. We want to ensure the owner of www is always the right one.
+11. We want to ensure the owner of www is always the right one.
 
 	dir -> <br />
 	path: `/var/www` <br />
@@ -139,7 +292,7 @@ Click on "Add a State" to add your first state.
 	user: `www-data` <br />
 	recursive: `true`
 
-11. Run nginx on startup, and ensure tu restart the service if the configuration files has been edited.
+12. Run nginx on startup, and ensure tu restart the service if the configuration files has been edited.
 
 	service -> <br />
 	name: `nginx` <br />
@@ -147,7 +300,7 @@ Click on "Add a State" to add your first state.
 	`/etc/nginx.conf`<br />
 	`/etc/nginx/sites-available/ghost.conf`
 
-12. Execute start script
+13. Execute start script
 
 	cmd -> <br />
 	cmd: `bash starter.sh && touch /dev/shm/ghost_starter.done` <br />
