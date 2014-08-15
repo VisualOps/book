@@ -4,14 +4,13 @@
 2. Create a new Stack by clicking 'Create new Stack' on the top left of the IDE dashboard
 3. Choose the [AWS region](http://aws.amazon.com/about-aws/globalinfrastructure/regional-product-services/) where you would like to create your Stack<br />
 ![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/create_stack.png)
-4. From the resource panel on the left, select the [Availability Zone](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html) of your choice and drag'n'drop it to the canvas (Note: Availability Zones depend upon the region selected)<br />
+4. From the resource panel on the left, select an [Availability Zone](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html) and drag'n'drop it to the canvas (Note: Availability Zones depend upon the region selected)<br />
 ![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/availability_zones.png)
-Note: A subnet will automatically be created. If not, you can find subnets under "Virtual Private Cloud" category in the resources panel. Simply drag it from the resoruce panel and trp it inside the Availability Zon."e
-5. Add an 'Internet Gateway' to your stack by dragging it from the 'Virtual Private Cloud' category under the resources panel towards the edge of the VPC. Once done, you may connect the Internet Gateway to the default Route Table
-6<br />
-The Internet Gateway will allow you to connect your VPC to the Internet<br />
+Note: A subnet will automatically be created. If not, you can simply drag one from the resoruce panel and drop it inside the Availability Zone.
+5. Add an 'Internet Gateway' to your stack by dragging it from the 'Network' category under the resources panel towards the edge of the VPC. Once done, you may connect the Internet Gateway to the default Route Table.<br />
+The Internet Gateway will allow you to connect your VPC to the Internet.<br />
 ![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/internet_gateway.png)
-6. Following the same principle, drag'n'drop an instance (from the 'Images' menu) inside the previously created Subnet, within the Availability Zone, (Note: We will use a 64bits Ubuntu 13.10 AMI in this example)<br />
+6. Following the same principle, drag'n'drop an instance (from the 'Images' menu) inside the previously created Subnet, within the Availability Zone, (Note: We will use a 64bits Ubuntu 14.04 AMI in this example)<br />
 ![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/create_instances.png)
 7. Click on each AMI icon and set the hostname to 'ghost' in the right panel<br />
 ![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/name_instances.png)
@@ -45,7 +44,7 @@ It is now possible to chosse which SSH key to use for your application. You have
 	- Import a key-pair from your computer
 	- Use no key-pair (useful in case of customs AMIs with specific password, that you already know)
 
-	Key pairs can be specified by instance, or by app, selecting '$DefaultKeyPair' (default) in the properties panel of any instance<br />
+	Key pairs can be specified by instance, or by app, selecting '\$DefaultKeyPair' (default) in the properties panel of any instance<br />
 ![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/list_keys.png)<br />
 To manage your key-pair, click on 'Manage Region Key Pairs' in the properties panel of any instance<br />
 ![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/custom_keys.png)<br />

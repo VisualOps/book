@@ -19,7 +19,6 @@ Currently, VisualOps supports the following resources:
     - Internet Gateway
     - Virtual Gateway
     - Customer Gateway
-    - VPN Connection
 
 - EC2
     - Instance Group
@@ -28,6 +27,8 @@ Currently, VisualOps supports the following resources:
     - Elastic IP
 
 - ELB
+    - Listeners
+    - Health Check
 
 - Auto Scaling Group
     - Launch Configuration
