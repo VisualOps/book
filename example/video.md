@@ -1,6 +1,5 @@
 # Video
 
-## Video Tutorials
 ### Drag and Drop to Add Resource
 <video src="https://visualopsassets.s3.amazonaws.com/video/tutorial/Drag%20and%20Drop.mp4" controls width="600"></video>
 

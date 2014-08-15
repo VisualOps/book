@@ -1,7 +1,9 @@
 ## VisualOps - WYSIWYG for your cloud
 [VisualOps](http://www.visualops.io) is a visual cloud management tool. It brings **WYSIWYG** to the cloud, by：
-- **Ensure your app always run in the defined state**
-- **Give the uptodate view of your infrastructure**
+
+- **Easily and quickly design & deploy apps in the cloud in a visual way**
+- **24/7 ensure your app always run in the defined state**
+- **Give the up-to-date view of your infrastructure**
 
 ![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/wysiwyg.png)
 

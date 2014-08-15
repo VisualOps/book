@@ -6,6 +6,8 @@ You can keep track of cost at the very first stages - while designing your stack
 
 At the bottom of the property panel located to the right of the IDE you will find an interactive cost estimation detialing the rescources you are using and the cost they are likely to incurr
 
+![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/costestimation.png)
+
 ##Validation:
 
 At the validation stage VisualOps offers you an estimation of the monthly cost to run your app.
