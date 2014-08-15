@@ -1,6 +1,6 @@
 # Import Existing VPC
 
-Should you wish to import an existing VPC start by selecing the "Import VPC" button. It's the blue button loacted at the top left of the global dashboard.
+You can import an existing VPC by selecing the "Import VPC" button. It's the blue button loacted at the top left of the global dashboard.
 
 ![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/import%20vpc.png)
 
@@ -14,3 +14,7 @@ Here you may rename your App and specify the App usage.
 ![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/importvpc-3.png)
 
 You can now manage the complete lifcycle of the app using VisualOps.
+
+Note:
+- `Default VPC` is unavailable to impoort
+- If a VPC has been imported in VisualOps, it cannot be imported gain.
