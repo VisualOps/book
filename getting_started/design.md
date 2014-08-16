@@ -58,3 +58,4 @@ You can now choose the key in the property panel list (note that if you selected
 13. Click on the blank area of the canvas to focus on the Stack properties. Name the Stack as 'ghost' in the right panel, then click on the save icon on the left side of the top bar<br />
 ![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/save_stack.png)<br />
 Congratulations! Your Stack structure is now set and potentially ready to be launched!<br /><br />
+

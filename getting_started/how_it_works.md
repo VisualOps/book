@@ -1,12 +1,11 @@
 ## How it works
 
-VisualOps is similar to AWS CloudFormation or OpenStack HEAT: design and provision of infrastructure and applications in the cloud. The difference is that **VisualOps manages your app 24/7 to ensure that the app always run in the desired state, by continually scan the app and instantly fix any drift**.
-
-The basic workflow in VisualOps is:
->- Drag-n-drop components to build your AWS infrastructure
+### Workflow
+- Drag-n-drop resources to design the infrastructure
 - Click instances to setup the software configuration; package, file, code, etc.
 - Launch the app, within minutes the app is ready to use
-- **VisualOps ensures the app always runs in the defined states, by repeatedly continually the instance configuration and fixing any drift**
+
+Then, **VisualOps manages your app 24/7 to ensure that the app always run in the desired state, by continually monitor the infrastructure and the app, to instantly spot and fix any drift**.
 
 ![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/workflow.gif)
 
