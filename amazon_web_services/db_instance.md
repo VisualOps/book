@@ -13,5 +13,3 @@ Currently, only MySQL DB instance supports Read Replica.
 Simply click the bottom of the DB instance and drag-n-drop to create:
 ![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_canvas_rds_replica.png)
 
-And you can create read replicas in a different subnet group:
-![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_canvas_rds_replica_cross_sg.png)
