@@ -26,4 +26,4 @@ Which will be:
     server.2=10.0.0.5:2888:3888
     server.3=10.0.0.6:2888:3888
 
-Further explanation can be found [here](../reference/pointer.md).
+Further explanation can be found [here](../reference/pointer_syntax.md).
