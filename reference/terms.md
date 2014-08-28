@@ -12,8 +12,8 @@ A (instance) state is a configuration statement of an instance. It is defined at
 #### State Module
 When defining an instance state, you need to specify the `state module` (e.g. `file`, `git`, `npm`, `service`, etc,. ), and the corresponding parameters. The state module is built on a modified version of [Salt](http://www.saltstack.com), and you can find its source code [here](http://github.com/MadeiraCloud/salt).
 
-#### Pointer
-Supposing that you have a web server to point to a DB server. To do that, you can 'refer' the DB server's properties in the web server's state, like `@{db_server.PrivateIpAddress}`. Upon launching the stack, VisualOps will render the states by replacing the reference with the actual value. This is somehow similar to [Chef Databag](http://docs.opscode.com/essentials_data_bags.html) or [Salt Pillar](http://salt.readthedocs.org/en/latest/topics/pillar/), but in an explicit way. More details of the supported syntax can be found [here](./pointer_syntax.md)
+#### Link
+Supposing that you have a web server to point to a DB server. To do that, you can 'refer' the DB server's properties in the web server's state, like `@{db_server.PrivateIpAddress}`. Upon launching the stack, VisualOps will render the states by replacing the reference with the actual value. This is somehow similar to [Chef Databag](http://docs.opscode.com/essentials_data_bags.html) or [Salt Pillar](http://salt.readthedocs.org/en/latest/topics/pillar/), but in an explicit way. More details of the supported syntax can be found [here](./link_syntax.md)
 
 #### Recipe
 A recipe is a rendered state list, which will be sent to opsagent for execution.

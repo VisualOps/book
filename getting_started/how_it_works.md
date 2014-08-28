@@ -20,7 +20,7 @@ In VisualOps:
 
 > **(INSTANCE) STATE** : A (instance) state is a configuration statement of an instance. It is defined at the stack's design phase, and  applied to the instance at the runtime. A state should be [idempotent](http://en.wikipedia.org/wiki/Idempotence), as during the lifecycle of the app the app's state is consistently maintained. The state drift will be automatically fixed, so the app will *always* run in the desired state. (*If you are familiar with other DevOps tools, such as Puppet, you may find that a state is similar to Puppet manifest*)
 
-> **Pointer**: Pointer gives the way to connect and coordinate different services across multiple instances to setup a distributed app. One example is to connect web_server->db_server using: ****@{db_server.PrivateIpAddress}**** in the web_server's configurtion file.
+> **Link**: Link gives the way to connect and coordinate different services across multiple instances to setup a distributed app. One example is to connect web_server->db_server using: ****@{db_server.PrivateIpAddress}**** in the web_server's configurtion file.
 
 ### IDE
 
@@ -33,7 +33,7 @@ The following sections explains the main components in VisualOps IDE:
 - [Dashboard](./dashboard.md)
 - [Stack](./stack.md)
 - [(Instance) State](./instance_state.md)
-- [Pointer](./pointer.md)
+- [Link](./link.md)
 - [App](./app.md)
 - [Account Setting](./account_setting.md)
 

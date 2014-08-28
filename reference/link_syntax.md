@@ -1,10 +1,10 @@
-# Pointer Syntax
+# Link
 
-This document collects the Pointer syntax defined by VisualOps
+This document collects the Link syntax defined by VisualOps
 
 ### Jinja syntax
 
-Pointer is compatible with the [Jinja](http://jinja.pocoo.org/) syntax.
+Link is compatible with the [Jinja](http://jinja.pocoo.org/) syntax.
 
 You can check out the [SaltStack documentation](http://docs.saltstack.com/en/latest/ref/renderers/all/salt.renderers.jinja.html) about the Jinja renderer for more details about it.
 
