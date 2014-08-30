@@ -6,10 +6,20 @@ You can create new blank DB instance or create from the previous DB Snapshot in 
 
 ![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_resource_rds_instance.png)
 
-#### Read Replica
+### Restore to Point In Time
 
-Currently, only MySQL DB instance supports Read Replica.
+To restore DB instance, make sure ***Automatic Backup*** is enabled:
+![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_property_rds_backup.jpg)
 
-Simply click the bottom of the DB instance and drag-n-drop to create:
-![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_canvas_rds_replica.png)
+To restore a DB instance with a previous backup：
+- open the app
+- click `Edit App`
+- click the top of the DB instance and drag-n-drop to restore
+![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_resource_rds_restore.jpg)
 
+- specify the restorable time
+![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_canvas_rds_restore.jpg)
+- click `Apply` to apply the changes
+
+You can find out the restorable time by checking the DB log & event:
+![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_property_log_backup.jpg)
