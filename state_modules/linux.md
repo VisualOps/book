@@ -7,6 +7,7 @@
 - [cmd](./cmd.md)
 - [cronjob](./cronjob.md)
 - [dir](./dir.md)
+- [docker](./docker.md)
 - [docker built](./docker built.md)
 - [docker pulled](./docker pulled.md)
 - [docker pushed](./docker pushed.md)

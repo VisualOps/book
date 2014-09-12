@@ -1,8 +1,8 @@
-# docker running
+# docker
 
 
 ##### Description
-Ensure that a container from the given name is running. If not, run it.
+Run a container from a remote image
 
 ##### Parameters
 
@@ -11,11 +11,21 @@ Ensure that a container from the given name is running. If not, run it.
 		example:
 			my_container
 
-*   **`image`** (*required*): Image from which to build this container
+*   **`image`** (*required*): Image/repo from which to build this container
 
 		example:
 			namespace/image
 
+*   **`tag`** (*optional*): Repository tag (default: latest)
+
+		example:
+			latest
+
+*   **`username`** (*optional*): Username used to login to repository
+
+*   **`password`** (*optional*): Password used to login to repository (required if username specified)
+
+*   **`email`** (*optional*): Email used to login to repository (required if username specified)
 
 *   **`count`** (*optional*): Specify the number of containers to run
 
@@ -67,11 +77,9 @@ Ensure that a container from the given name is running. If not, run it.
 			6000/tcp: 6000 (default ip: 0.0.0.0)
 			80: 6666 (default protocol: tcp)
 
-*   **`force`** (*optional*): Force (re)build container on each round
-
-*   **`watch`** (*optional*): watch a list of files, restart the container if any of them is modified
+*   **`files`** (*optional*): list of persistent files
 
 		example:
-			/etc/nginx/nginx.conf
-			/etc/my.cnf
+			/etc/nginx/nginx.conf : *content*
+			/etc/my.cnf           : *content*
 				

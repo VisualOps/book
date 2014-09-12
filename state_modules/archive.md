@@ -17,12 +17,11 @@ extract an archive file
 
 	>note: the path will be auto-created if it doesn't exist
 
-*   **`checksum`** (*optional*): the url of the source checksum file or checksum value string, whose value (content) will be used to verify the integrity of the source archive
+*   **`checksum`** (*optional*): the url of the source checksum file or checksum value string, whose value (content) will be used to verify the integrity of the source archive, only support md5
 
 		example:
 			http(s):///host/path/to/checksum_file
 			md5:md5_value_string
-			sha1:sha1_value_string
 
 *   **`if-path-absent`** (*optional*): extract the archive only if none of the specified path exists, see blow
 

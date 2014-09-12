@@ -71,6 +71,7 @@ with open('./SUMMARY.md', 'w') as f:
    * [Track App Changes](app_management/track_app_changes.md)
    * [Save App to Stack](app_management/save_app_to_stack.md)
    * [Reload States](app_management/reload_states.md)
+   * [Forget App](app_management/forget_app.md)
 * [Amazon Web Services](amazon_web_services/README.md)
    * [Shared Resource](amazon_web_services/shared_resource.md)
    * [EC2](amazon_web_services/ec2.md)
@@ -100,8 +101,10 @@ with open('./SUMMARY.md', 'w') as f:
        * [Subnet Group](amazon_web_services/subnet_group.md)
        * [DB Instance](amazon_web_services/db_instance.md)
        * [DB Snapshot](amazon_web_services/db_snapshot.md)
+       * [Read Replica](amazon_web_services/read_replica.md)
        * [Option Group](amazon_web_services/option_group.md)
        * [Parameter Group](amazon_web_services/parameter_group.md)
+       * [Log & Event](amazon_web_services/log_&_event.md)
 %s
 * [Example](example/README.md)
    * [VPC in depth](example/vpc_in_depth.md)
