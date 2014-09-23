@@ -76,7 +76,6 @@
 		* [apt pkg](state_modules/apt pkg.md)
 		* [apt ppa](state_modules/apt ppa.md)
 		* [apt repo](state_modules/apt repo.md)
-		* [chef solo](state_modules/chef solo.md)
 		* [cmd](state_modules/cmd.md)
 		* [cronjob](state_modules/cronjob.md)
 		* [dir](state_modules/dir.md)

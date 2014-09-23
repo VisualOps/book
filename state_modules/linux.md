@@ -3,7 +3,6 @@
 - [apt pkg](./apt pkg.md)
 - [apt ppa](./apt ppa.md)
 - [apt repo](./apt repo.md)
-- [chef solo](./chef solo.md)
 - [cmd](./cmd.md)
 - [cronjob](./cronjob.md)
 - [dir](./dir.md)
