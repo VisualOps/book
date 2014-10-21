@@ -24,7 +24,7 @@ You need to login with your VisualOps account:
 ### 2. Launch the stack on your laptop
 First, you need to pull the stack. A YAML file will be generated:
 
-    $ visualops stack pull stack-1234
+    $ visualops stack pull stack-19d19defd22
     Pulling stack-19defd22 from remote ....
 
     stack-19defd22 is saved to /root/stack-19defd22.yaml
