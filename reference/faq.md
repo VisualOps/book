@@ -39,13 +39,6 @@ Q: What is the main difference between [VisualOps](http://www.visualops.io) and 
 
 > "AWS OpsWorks is an application management service that makes it easy for DevOps users to model and manage the entire application" [[1]](http://aws.amazon.com/opsworks/). OpsWorks is tightly entwined with [Chef](http://www.getchef.com/), which can be both a significant advantage/disadvantage. Compared with OpsWorks/Chef's bottom-up approach, VisualOps takes a different route. First focus on the infrastructure level, then use the visual [IDE](https://ide.visualops.io) to design the architecture; then drill down into the servers to configure and connect them. We believe this is the best approach of the DevOps toolchain: **system architecture first, then server details**.
 
-Q: How much will it cost?
-
-> VisualOps is currently FREE to use. We will keep you informed about when we will be releasing the full price plan. However we will be keeping the design feature as free, and then will price by the number of managed apps/resources.
-Interested? Then sign up for free now. As we are in fairly early stages we are most interested in attracting those people who’s feedback can help us evolve into an evermore useful and beneficial tool.
-
-
-
 Q: What about the security?
 
 > We continue to put enormous effort into toughening up our security.
