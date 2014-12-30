@@ -60,13 +60,6 @@ Run a container from a remote image
 		example:
 			0
 
-*   **`publish_all_ports`** (*optional*): Publish all ports
-
-*   **`links`** (*optional*): Link several container together (if not specified in `Dockerfile`)
-
-		example:
-			name_other_container: alias_for_other_container
-
 *   **`port_bindings`** (*optional*): List of ports to expose on host system. Maps containers port/protocol to host listening ip:port
 
 		note:
@@ -78,6 +71,8 @@ Run a container from a remote image
 			80: 6666 (default protocol: tcp)
 
 *   **`files`** (*optional*): list of persistent files
+
+*   **`force`** (*optional*): Force (re)build container on each round
 
 		example:
 			/etc/nginx/nginx.conf : *content*

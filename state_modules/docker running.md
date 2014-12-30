@@ -50,12 +50,7 @@ Ensure that a container from the given name is running. If not, run it.
 		example:
 			0
 
-*   **`publish_all_ports`** (*optional*): Publish all ports
-
-*   **`links`** (*optional*): Link several container together (if not specified in `Dockerfile`)
-
-		example:
-			name_other_container: alias_for_other_container
+*   **`force`** (*optional*): Force (re)build container on each round
 
 *   **`port_bindings`** (*optional*): List of ports to expose on host system. Maps containers port/protocol to host listening ip:port
 
@@ -66,8 +61,6 @@ Ensure that a container from the given name is running. If not, run it.
 			5000/tcp: 127.0.0.1:5000
 			6000/tcp: 6000 (default ip: 0.0.0.0)
 			80: 6666 (default protocol: tcp)
-
-*   **`force`** (*optional*): Force (re)build container on each round
 
 *   **`watch`** (*optional*): watch a list of files, restart the container if any of them is modified
 
