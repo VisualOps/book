@@ -36,7 +36,7 @@ The current release has some prerequisite so that CloudFormation templates can b
 ## Howto
 - If you want to import existing resource template, you need to convert it to a complete new component like following figure and fill in the connection between two component such as availability zone, subnet id so that our algorithm can find out the architecture of your template. 
 
-![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_stack_importcf_sample1.png)
+    ![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_stack_importcf_sample1.png)
 
 ## Common Errors
 The following lists the common errors you may have, which leads to failed to import the CloudFormation templates:
