@@ -2,7 +2,7 @@
 
 
 ##### Description
-Run a Chef solo. You should have your Chef recipe already present on your instance, or download it using the `recipe_url` parameter. Not that it is highly recommended to write a Chef configuration file, that you can specify in the `config` parameter. The config file may contains the location of your recipe, as well as the different items to run.
+Run a Chef solo. You should have your Chef recipe already present on your instance, or download it using the `recipe_url` parameter. Although we wouldn't recommended writing a Chef configuration file, that you can specify in the `config` parameter. The config file may contain the location of your recipe, as well as the different items to run.
 
 See Chef documentation for more details.
 
