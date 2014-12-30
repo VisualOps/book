@@ -7,7 +7,7 @@ You can import CloudFormation templates into the IDE to visualize.
 ## Prerequisite
 The current release has some prerequisite so that CloudFormation templates can be imported:
 
-- The resource in template which is not supported by VisualOps will be ignored. For more detail: http://docs.visualops.io/amazon_web_services/README.html
+- The resource in template which is not supported by VisualOps will be ignored.
 
 - The template must not include any existing resource as follow:
 
@@ -57,14 +57,11 @@ The current release has some prerequisite so that CloudFormation templates can b
 ![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_stack_import_cfn_sharepoint2.png)
 
 ## Common Errors
-- Even you finish above steps, you may still failed to import due to follwoing reason:
+The following lists the common errors you may have, which leads to failed to import the CloudFormation templates:
 
-    The availability zone of the volume is not match with corresponed attached instance.
-    
-    The region you want to import do not match the availability zone you describe in the template
-    
-    Your template have more than 2 VPC component
-    
-    One of the component is missing AWS required property like subnet is missing property VpcId
+    - The availability zone of the volume is not match with corresponed attached instance.
+    - The region you want to import do not match the availability zone you describe in the template
+    - Your template have more than 2 VPC component
+    - One of the component is missing AWS required property like subnet is missing property VpcId
 
 
