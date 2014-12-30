@@ -2,7 +2,7 @@
 
 
 ##### Description
-Run a Puppet round. This module is useful in case you already have a custom configuration for the puppet client, and simply want to run a round. No argument is required. If you don't have any specific requirement and want to apply a Puppet manifest or connect to a Puppet server, this module is probably not the one you want to use.
+Run a Puppet round. This module is useful if you already have a custom configuration for the puppet client, and simply want to run a round. No argument is required. If you don't have any specific requirement and want to apply a Puppet manifest or connect to a Puppet server, there is likely another more suitable module for you.
 
 Note: Puppet module is incompatible with CentOS 6.4
 
