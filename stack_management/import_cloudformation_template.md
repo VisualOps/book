@@ -12,26 +12,26 @@ The current release has some prerequisite so that CloudFormation templates can b
 - The template must not include any existing resource as follow:
 
 
-    AWS::EC2::EBS::Volume
-    AWS::EC2::EIP
-    AWS::EC2::Instance
-    AWS::EC2::SecurityGroup
-    AWS::ELB
-    AWS::EC2::NetworkAcl
-    AWS::EC2::CustomerGateway
-    AWS::EC2::NetworkInterface
-    AWS::EC2::InternetGateway
-    AWS::EC2::RouteTable
-    AWS::EC2::Subnet
-    AWS::EC2::VPC
-    AWS::EC2::VPNConnection
-    AWS::EC2::VPNGateway
-    AWS::AutoScaling::Group
-    AWS::AutoScaling::LaunchConfiguration
-    AWS::AutoScaling::ScalingPolicy
-    AWS::CloudWatch::CloudWatch
-    AWS::RDS::DBInstance
-    AWS::RDS::DBSubnetGroup
+    - AWS::EC2::EBS::Volume
+    - AWS::EC2::EIP
+    - AWS::EC2::Instance
+    - AWS::EC2::SecurityGroup
+    - AWS::ELB
+    - AWS::EC2::NetworkAcl
+    - AWS::EC2::CustomerGateway
+    - AWS::EC2::NetworkInterface
+    - AWS::EC2::InternetGateway
+    - AWS::EC2::RouteTable
+    - AWS::EC2::Subnet
+    - AWS::EC2::VPC
+    - AWS::EC2::VPNConnection
+    - AWS::EC2::VPNGateway
+    - AWS::AutoScaling::Group
+    - AWS::AutoScaling::LaunchConfiguration
+    - AWS::AutoScaling::ScalingPolicy
+    - AWS::CloudWatch::CloudWatch
+    - AWS::RDS::DBInstance
+    - AWS::RDS::DBSubnetGroup
 
 ## Howto
 - If you want to import existing resource template, you need to convert it to a complete new component like following figure and fill in the connection between two component such as availability zone, subnet id so that our algorithm can find out the architecture of your template. 
