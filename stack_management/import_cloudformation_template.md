@@ -51,9 +51,12 @@ The current release has some prerequisite so that CloudFormation templates can b
     
     AWS::RDS::DBSubnetGroup
 
+## Howto
 - If you want to import existing resource template, you need to convert it to a complete new component like following figure and fill in the connection between two component such as availability zone, subnet id so that our algorithm can find out the architecture of your template. 
 
 ![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_stack_import_cfn_sharepoint2.png)
+
+## Common Errors
 - Even you finish above steps, you may still failed to import due to follwoing reason:
 
     The availability zone of the volume is not match with corresponed attached instance.
