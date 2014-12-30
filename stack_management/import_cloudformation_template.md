@@ -5,8 +5,10 @@ You can import CloudFormation templates into the IDE to visualize.
 ![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_stack_import_cfn.png)
 
 ## Prerequisite
-- The resource in template which is not supported by VisualOps will be ignore
 The current release has some prerequisite so that CloudFormation templates can be imported:
+
+- The resource in template which is not supported by VisualOps will be ignored.
+
 - The template must not include any existing resource as follow:
 
     AWS::EC2::EBS::Volume
