@@ -7,7 +7,7 @@ You can import CloudFormation templates into the IDE to visualize.
 ## Prerequisite
 The current release has some prerequisite so that CloudFormation templates can be imported:
 
-- The resource in template which is not supported by VisualOps will be ignored.
+- The resource in template which is not supported by VisualOps will be ignored. For more detail: http://docs.visualops.io/amazon_web_services/README.html
 
 - The template must not include any existing resource as follow:
 
