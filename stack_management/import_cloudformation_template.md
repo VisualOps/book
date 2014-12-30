@@ -18,9 +18,7 @@ Here is the example in AWS, it's named Template_1_SharePoint_2013.template.
 ![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_stack_import_cfn_sharepoint.png)
 
 
-The VPC and subnets are defined in the Parameters section which makes it reference to an existing VPC and subnets.
-In order to import this template, you have to do a little modification.
-Move the VPC and subnet to the Resources section and convert to a new resource like the following.
+As the templete exists already, the VPC and subnets are defined in the ‘Parameters’ section which causes them to reference to the existing VPC and subnets. To allow the template to be imported to VisualOps IDE you need to move this to the ‘Resources’ section and convert it into a new resource like so:
 
 ![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_stack_import_cfn_sharepoint2.png)
 
