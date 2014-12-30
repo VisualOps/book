@@ -6,7 +6,7 @@ You can import CloudFormation templates into the IDE to visualize.
 
 ## Prerequisite
 
-The current release has some prerequisite so that the CloudFormation templates can be imported:
+The current release has some prerequisite so that CloudFormation templates can be imported:
 - the template must not include any reference to an existing VPC, Subnet or Security Group
 - These components must be defined as completely new resources
 
