@@ -45,5 +45,6 @@ The following lists the common errors you may have, which leads to failed to imp
     - The region you want to import do not match the availability zone you describe in the template
     - Your template have more than 2 VPC component
     - One of the component is missing AWS required property like subnet is missing property VpcId
+    - More than 2 EIP can not associate to the same instance without specify specific private ip address
 
 
