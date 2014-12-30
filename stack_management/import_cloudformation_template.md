@@ -47,5 +47,6 @@ The following lists the common errors you may have, which leads to failed to imp
     - One of the component is missing AWS required property like subnet is missing property VpcId
     - More than 2 EIP can not associate to the same instance without specify specific private ip address
     - Fn::FindInMap need to be correct if use it to match corresponding AMI
+    - Use Fn::GetAtt to get a runtime properity(For example AvailabilityZone of subnet) will casuse an error
 
 
