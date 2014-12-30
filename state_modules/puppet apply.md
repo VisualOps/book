@@ -2,7 +2,7 @@
 
 
 ##### Description
-Apply a Puppet manifest. This module will run independently, and doesn't require to connect to any Puppet server.
+Apply a Puppet manifest. This module will run independently, and doesn't require you to connect to any Puppet server.
 
 `puppet apply` will run the manifests files set in the `manifests` parameter.
 
