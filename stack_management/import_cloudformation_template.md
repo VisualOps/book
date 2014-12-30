@@ -13,7 +13,7 @@ The current release has some prerequisite so that CloudFormation templates can b
 To meet these requirements, you can edit your template as follows:
 
 ## Example
-Here is the example in AWS, named is Template_1_SharePoint_2013.template.
+Here is the example in AWS, it's named Template_1_SharePoint_2013.template.
 
 ![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_stack_import_cfn_sharepoint.png)
 
