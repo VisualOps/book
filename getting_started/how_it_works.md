@@ -1,6 +1,6 @@
 ## How it works
 
-### Workflow
+### Overview
 - Drag-n-drop resources to design the infrastructure
 - Click instances to setup the software configuration; package, file, code, etc.
 - Launch the app, within minutes the app is ready to use
@@ -22,18 +22,23 @@ In VisualOps:
 
 > **Link**: Link gives the way to connect and coordinate different services across multiple instances to setup a distributed app. One example is to connect web_server->db_server using: ****@{db_server.PrivateIpAddress}**** in the web_server's configurtion file.
 
+> **Workspace**: A workspace is a collaboration space where a team of members can work on a set of stacks and apps.
+
+
 ### IDE
 
 ![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_stack_all.png)<br />
 
 VisualOps IDE is the visual console for you to build and manage the cloud application.
 
+
 The following sections explains the main components in VisualOps IDE:
 
 - [Dashboard](./dashboard.md)
+- [Workspace](./workspace.md)
 - [Stack](./stack.md)
 - [(Instance) State](./instance_state.md)
 - [Link](./link.md)
 - [App](./app.md)
 - [Account Setting](./account_setting.md)
-
+- [Account Setting](./workspace.md)

@@ -1,8 +1,10 @@
 # Dashboard
 
-The dashboard is a control center where you can control both your VisualOps activity and your AWS account activity and resources.
+The dashboard is a control center where you can control both your VisualOps activity and your IaaS account activity and resources.
 
 ![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_dashboard_all.png)<br /><br />
+
+> ** NOTE **: ***The data displayed in the dashboard is workspace-specific. By switching to another workspace, the display will refresh to show the stack, app and cloud resources associated with the new workspace.***
 
 ##### Stack creation button
 A 'Create new Stack' button has been implemented to help you create new Stacks with VisualOps IDE. You can find it at the top left of the dashboard<br /><br />
@@ -22,7 +24,7 @@ The 'Main View' is the top view of the dashboard, showing the number of Apps and
 
 #### Global
 ![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_dashboard_global.png)<br /><br />
-The global view is an overview of the costly AWS resources in all AWS regions<br />
+The global view is an overview of the costly cloud resources in all AWS regions<br />
 This view helps to quickly determine which resources are currently in use and will generate cost
 
 As you can see above:
