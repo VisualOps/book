@@ -52,3 +52,7 @@ You can get more details about a specific resource by clicking on the 'Detail' i
 For example, for an instance:<br />
 ![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_dashboard_ami.png)
 
+#### Activity/Audit Log
+You can review the recent activities in current workspace.
+
+![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_dashboard_log.png)
