@@ -1,6 +1,6 @@
 # Dashboard
 
-The dashboard is a control center where you can control both your VisualOps activity and your IaaS account activity and resources.
+The dashboard is a control center where you can control both your VisualOps activity and your IaaS account activity and resources within a workspace.
 
 ![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_dashboard_all.png)<br /><br />
 
@@ -18,12 +18,14 @@ The 'Import stack' button allows you to import previously created stacks to the 
 The 'Import VPC' button helps you to import your existing VPCs as app into VisualOps.<br /><br />
 ![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_dashboard_visuvpc.png)<br />
 
-#### Main View
+#### App/Stack View
+The 'App/Stack View' is the top view of the dashboard, showing apps and stacks within current worksapce. By default it will show apps/stacks in all regions. You may switch to specific region by using the dropdown in upper corner of each section. 
 ![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_dashboard_main.png)<br /><br />
-The 'Main View' is the top view of the dashboard, showing the number of Apps and Stacks in every AWS region. The 'Main View' is always displayed in the dashboard
 
-#### Global
+#### Resource Table
 ![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_dashboard_global.png)<br /><br />
+The resource table contains 2 views: global view and region view.
+ 
 The global view is an overview of the costly cloud resources in all AWS regions<br />
 This view helps to quickly determine which resources are currently in use and will generate cost
 
@@ -35,18 +37,14 @@ As you can see above:
 - [Load Balancers (ELB)](http://aws.amazon.com/elasticloadbalancing/)
 - [VPNs](http://aws.amazon.com/vpc/)
 
-note: VPCs are inexpensive, however VPN connections to VPCs are more costly
+note #1: VPCs are inexpensive, however VPN connections to VPCs are more costly
 
-note2: EIP are free if associated to any instance. If this instance is stopped, your EIP will generate cost
+note #2: EIP are free if associated to any instance. If this instance is stopped, your EIP will generate cost
 
-#### Region View
 ![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_dashboard_region.png)<br /><br />
-The region specific view is an overview of different resources in a specific region
+The region specific view is an overview of different resources in a specific region.
 
-This view is separated in two parts:
-
-- The App/Stack view: You can see here the App and Stack created in this specific region using VisualOps IDE
-- The AWS resources view: You can see here the details of the most relevant AWS resources, whether or not created with VisualOps IDE
+You can see here the details of the most relevant AWS resources, whether or not created with VisualOps IDE
 
 #### Resource Details
 You can get more details about a specific resource by clicking on the 'Detail' icon, on the right of each resource. This will display all required information about the resource
