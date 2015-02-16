@@ -1,0 +1,688 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head prefix="og: http://ogp.me/ns# book: http://ogp.me/ns/book#">
+        
+        <meta charset="UTF-8">
+        <title>Import CloudFormation template | Book</title>
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="MadeiraCloud">
+        <meta name="description" content="Book generated using GitBook">
+        <meta name="keywords" content="gitbook,github" >
+        <meta name="generator" content="www.gitbook.io">
+
+        
+        <link rel="next" href="../app/README.html" />
+        
+        
+        <link rel="prev" href="../stack/import_existing_stack.html" />
+        
+
+        <meta property="og:title" content="Import CloudFormation template | Book">
+        <meta property="og:site_name" content="Book">
+        <meta property="og:type" content="book">
+        <meta property="og:locale" content="en_US">
+
+        <meta property="book:author" content="https://github.com/MadeiraCloud">
+        <meta property="book:tag" content="GitBook">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+        
+        <link rel="stylesheet" href="../gitbook/style.css">
+        
+        
+    </head>
+    <body>
+        
+<div class="book" data-github="MadeiraCloud/book" data-level="3.6" data-basepath=".." data-revision="1424062841970">
+    <div class="book-header">
+    <!-- Actions Left -->
+    <a href="https://github.com/MadeiraCloud/book" target="_blank" class="btn pull-left"><i class="fa fa-github-alt"></i></a>
+    <a href="#" class="btn pull-left toggle-summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search"><i class="fa fa-search"></i></a>
+
+    <!-- Actions Right -->
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="google-plus"><i class="fa fa-google-plus"></i></a>
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="facebook"><i class="fa fa-facebook"></i></a>
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="twitter"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://github.com/MadeiraCloud/book/stargazers" target="_blank" class="btn pull-right count-star"><i class="fa fa-star-o"></i> Star (<span>-</span>)</a>
+    <a href="https://github.com/MadeiraCloud/book/watchers" target="_blank" class="btn pull-right count-watch"><i class="fa fa-eye"></i> Watch (<span>-</span>)</a>
+
+
+    <!-- Title -->
+    <h1><a href="../" >Book</a></h1>
+</div>
+
+    <div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Search" class="form-control" />
+    </div>
+    <ul class="summary">
+        <li>
+            <a href="https://github.com/MadeiraCloud" target="blank">About the author</a>
+        </li>
+        <li>
+            <a href="https://github.com/MadeiraCloud/book/issues" target="blank">Questions and Issues</a>
+        </li>
+        <li>
+            <a href="https://github.com/MadeiraCloud/book/edit/master/stack/import_cloudformation_template.md" target="blank">Edit and Contribute</a>
+        </li>
+        <li class="divider"></li>
+        <li data-level="0" data-path="index.html">
+            <a href="../"><i class="fa fa-check"></i> Introduction</a>
+        </li>
+        
+            <li  data-level="1" data-path="index.html">
+                
+                <a href="../index.html">
+                    <i class="fa fa-check"></i> <b>1)</b> Introduction
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="2" data-path="getting_started/README.html">
+                
+                <a href="../getting_started/README.html">
+                    <i class="fa fa-check"></i> <b>2)</b> Getting Started
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="2.1" data-path="getting_started/how_it_works.html">
+                            
+                            <a href="../getting_started/how_it_works.html">
+                                <i class="fa fa-check"></i> <b>2.1)</b> How it works
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="2.2" data-path="getting_started/setup.html">
+                            
+                            <a href="../getting_started/setup.html">
+                                <i class="fa fa-check"></i> <b>2.2)</b> Setup
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="2.3" data-path="getting_started/create_your_first_app.html">
+                            
+                            <a href="../getting_started/create_your_first_app.html">
+                                <i class="fa fa-check"></i> <b>2.3)</b> Create Your First App
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li  data-level="3" data-path="stack/README.html">
+                
+                <a href="../stack/README.html">
+                    <i class="fa fa-check"></i> <b>3)</b> Managing Stack
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="3.1" data-path="stack/instance_state_switch.html">
+                            
+                            <a href="../stack/instance_state_switch.html">
+                                <i class="fa fa-check"></i> <b>3.1)</b> Instance State Switch
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="3.2" data-path="stack/validate_stack.html">
+                            
+                            <a href="../stack/validate_stack.html">
+                                <i class="fa fa-check"></i> <b>3.2)</b> Validate Stack Design
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="3.3" data-path="stack/cost_estimation.html">
+                            
+                            <a href="../stack/cost_estimation.html">
+                                <i class="fa fa-check"></i> <b>3.3)</b> Cost Estimation
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="3.4" data-path="stack/clone_resource.html">
+                            
+                            <a href="../stack/clone_resource.html">
+                                <i class="fa fa-check"></i> <b>3.4)</b> Clone Resource
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="3.5" data-path="stack/import_existing_stack.html">
+                            
+                            <a href="../stack/import_existing_stack.html">
+                                <i class="fa fa-check"></i> <b>3.5)</b> Import Existing Stack
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="3.6" data-path="stack/import_cloudformation_template.html">
+                            
+                            <a href="../stack/import_cloudformation_template.html">
+                                <i class="fa fa-check"></i> <b>3.6)</b> Import CloudFormation template
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li  data-level="4" data-path="app/README.html">
+                
+                <a href="../app/README.html">
+                    <i class="fa fa-check"></i> <b>4)</b> Managing App
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="4.1" data-path="app/edit.html">
+                            
+                            <a href="../app/edit.html">
+                                <i class="fa fa-check"></i> <b>4.1)</b> Edit Running App
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="4.2" data-path="app/import.html">
+                            
+                            <a href="../app/import.html">
+                                <i class="fa fa-check"></i> <b>4.2)</b> Import Existing VPC
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="4.3" data-path="app/track_app_changes.html">
+                            
+                            <a href="../app/track_app_changes.html">
+                                <i class="fa fa-check"></i> <b>4.3)</b> Track App Changes
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="4.4" data-path="app/save_app_to_stack.html">
+                            
+                            <a href="../app/save_app_to_stack.html">
+                                <i class="fa fa-check"></i> <b>4.4)</b> Save App to Stack
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="4.5" data-path="app/reload_states.html">
+                            
+                            <a href="../app/reload_states.html">
+                                <i class="fa fa-check"></i> <b>4.5)</b> Reload States
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="4.6" data-path="app/forget_app.html">
+                            
+                            <a href="../app/forget_app.html">
+                                <i class="fa fa-check"></i> <b>4.6)</b> Forget App
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li  data-level="5" data-path="workspace/README.html">
+                
+                <a href="../workspace/README.html">
+                    <i class="fa fa-check"></i> <b>5)</b> Managing Workspace
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="5.1" data-path="workspace/create_new_workspace.html">
+                            
+                            <a href="../workspace/create_new_workspace.html">
+                                <i class="fa fa-check"></i> <b>5.1)</b> Create new workspace
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="5.2" data-path="workspace/team_management.html">
+                            
+                            <a href="../workspace/team_management.html">
+                                <i class="fa fa-check"></i> <b>5.2)</b> Team Management
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="5.3" data-path="workspace/cloud_credential.html">
+                            
+                            <a href="../workspace/cloud_credential.html">
+                                <i class="fa fa-check"></i> <b>5.3)</b> Cloud Credential
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="5.4" data-path="workspace/billing_&amp;_usage.html">
+                            
+                            <a href="../workspace/billing_&amp;_usage.html">
+                                <i class="fa fa-check"></i> <b>5.4)</b> Billing &amp; Usage
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="5.5" data-path="workspace/api_token.html">
+                            
+                            <a href="../workspace/api_token.html">
+                                <i class="fa fa-check"></i> <b>5.5)</b> API Token
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="5.6" data-path="workspace/delete_a_workspace.html">
+                            
+                            <a href="../workspace/delete_a_workspace.html">
+                                <i class="fa fa-check"></i> <b>5.6)</b> Delete a workspace
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li  data-level="6" data-path="aws/README.html">
+                
+                <a href="../aws/README.html">
+                    <i class="fa fa-check"></i> <b>6)</b> Amazon Web Services
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="6.1" data-path="aws/shared_resource.html">
+                            
+                            <a href="../aws/shared_resource.html">
+                                <i class="fa fa-check"></i> <b>6.1)</b> Shared Resource
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="6.2" data-path="aws/ec2/ec2.html">
+                            
+                            <a href="../aws/ec2/ec2.html">
+                                <i class="fa fa-check"></i> <b>6.2)</b> EC2
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="6.3" data-path="aws/vpc/vpc.html">
+                            
+                            <a href="../aws/vpc/vpc.html">
+                                <i class="fa fa-check"></i> <b>6.3)</b> VPC
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="6.4" data-path="aws/elb/elb.html">
+                            
+                            <a href="../aws/elb/elb.html">
+                                <i class="fa fa-check"></i> <b>6.4)</b> ELB
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="6.5" data-path="aws/autoscaling/autoscaling.html">
+                            
+                            <a href="../aws/autoscaling/autoscaling.html">
+                                <i class="fa fa-check"></i> <b>6.5)</b> AutoScaling
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="6.6" data-path="aws/rds/rds.html">
+                            
+                            <a href="../aws/rds/rds.html">
+                                <i class="fa fa-check"></i> <b>6.6)</b> RDS
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="6.7" data-path="aws/example/README.html">
+                            
+                            <a href="../aws/example/README.html">
+                                <i class="fa fa-check"></i> <b>6.7)</b> Example
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li  data-level="7" data-path="state/README.html">
+                
+                <a href="../state/README.html">
+                    <i class="fa fa-check"></i> <b>7)</b> State Modules
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="7.1" data-path="state/common/common.html">
+                            
+                            <a href="../state/common/common.html">
+                                <i class="fa fa-check"></i> <b>7.1)</b> Common
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="7.2" data-path="state/linux/linux.html">
+                            
+                            <a href="../state/linux/linux.html">
+                                <i class="fa fa-check"></i> <b>7.2)</b> Linux
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="7.3" data-path="state/meta/meta.html">
+                            
+                            <a href="../state/meta/meta.html">
+                                <i class="fa fa-check"></i> <b>7.3)</b> Meta
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="7.4" data-path="state/windows/windows.html">
+                            
+                            <a href="../state/windows/windows.html">
+                                <i class="fa fa-check"></i> <b>7.4)</b> Windows
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li  data-level="8" data-path="reference/README.html">
+                
+                <a href="../reference/README.html">
+                    <i class="fa fa-check"></i> <b>8)</b> Reference
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="8.1" data-path="reference/faq.html">
+                            
+                            <a href="../reference/faq.html">
+                                <i class="fa fa-check"></i> <b>8.1)</b> FAQ
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="8.2" data-path="reference/terms.html">
+                            
+                            <a href="../reference/terms.html">
+                                <i class="fa fa-check"></i> <b>8.2)</b> Terms
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="8.3" data-path="reference/cli.html">
+                            
+                            <a href="../reference/cli.html">
+                                <i class="fa fa-check"></i> <b>8.3)</b> CLI
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="8.4" data-path="reference/ide_shortcut.html">
+                            
+                            <a href="../reference/ide_shortcut.html">
+                                <i class="fa fa-check"></i> <b>8.4)</b> IDE Shortcut
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="8.5" data-path="reference/link_syntax.html">
+                            
+                            <a href="../reference/link_syntax.html">
+                                <i class="fa fa-check"></i> <b>8.5)</b> Link
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="8.6" data-path="reference/reserved_keyword.html">
+                            
+                            <a href="../reference/reserved_keyword.html">
+                                <i class="fa fa-check"></i> <b>8.6)</b> Reserved Keyword
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="8.7" data-path="reference/opsagent.html">
+                            
+                            <a href="../reference/opsagent.html">
+                                <i class="fa fa-check"></i> <b>8.7)</b> OpsAgent
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="8.8" data-path="reference/api.html">
+                            
+                            <a href="../reference/api.html">
+                                <i class="fa fa-check"></i> <b>8.8)</b> API
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body" tabindex="-1">
+        <div class="body-inner">
+            <div class="page-wrapper">
+                <div class="book-progress">
+    <div class="bar">
+        <div class="inner" style="width: 23.404255319148938%;min-width: 21.27659574468085%;"></div>
+    </div>
+    <div class="chapters">
+    
+        <a href="../index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
+    
+        <a href="../getting_started/README.html" title="Getting Started" class="chapter done new-chapter" data-progress="2" style="left: 2.127659574468085%;"></a>
+    
+        <a href="../getting_started/how_it_works.html" title="How it works" class="chapter done " data-progress="2.1" style="left: 4.25531914893617%;"></a>
+    
+        <a href="../getting_started/setup.html" title="Setup" class="chapter done " data-progress="2.2" style="left: 6.382978723404255%;"></a>
+    
+        <a href="../getting_started/create_your_first_app.html" title="Create Your First App" class="chapter done " data-progress="2.3" style="left: 8.51063829787234%;"></a>
+    
+        <a href="../stack/README.html" title="Managing Stack" class="chapter done new-chapter" data-progress="3" style="left: 10.638297872340425%;"></a>
+    
+        <a href="../stack/instance_state_switch.html" title="Instance State Switch" class="chapter done " data-progress="3.1" style="left: 12.76595744680851%;"></a>
+    
+        <a href="../stack/validate_stack.html" title="Validate Stack Design" class="chapter done " data-progress="3.2" style="left: 14.893617021276595%;"></a>
+    
+        <a href="../stack/cost_estimation.html" title="Cost Estimation" class="chapter done " data-progress="3.3" style="left: 17.02127659574468%;"></a>
+    
+        <a href="../stack/clone_resource.html" title="Clone Resource" class="chapter done " data-progress="3.4" style="left: 19.148936170212767%;"></a>
+    
+        <a href="../stack/import_existing_stack.html" title="Import Existing Stack" class="chapter done " data-progress="3.5" style="left: 21.27659574468085%;"></a>
+    
+        <a href="../stack/import_cloudformation_template.html" title="Import CloudFormation template" class="chapter done " data-progress="3.6" style="left: 23.404255319148938%;"></a>
+    
+        <a href="../app/README.html" title="Managing App" class="chapter  new-chapter" data-progress="4" style="left: 25.53191489361702%;"></a>
+    
+        <a href="../app/edit.html" title="Edit Running App" class="chapter  " data-progress="4.1" style="left: 27.659574468085108%;"></a>
+    
+        <a href="../app/import.html" title="Import Existing VPC" class="chapter  " data-progress="4.2" style="left: 29.78723404255319%;"></a>
+    
+        <a href="../app/track_app_changes.html" title="Track App Changes" class="chapter  " data-progress="4.3" style="left: 31.914893617021278%;"></a>
+    
+        <a href="../app/save_app_to_stack.html" title="Save App to Stack" class="chapter  " data-progress="4.4" style="left: 34.04255319148936%;"></a>
+    
+        <a href="../app/reload_states.html" title="Reload States" class="chapter  " data-progress="4.5" style="left: 36.170212765957444%;"></a>
+    
+        <a href="../app/forget_app.html" title="Forget App" class="chapter  " data-progress="4.6" style="left: 38.297872340425535%;"></a>
+    
+        <a href="../workspace/README.html" title="Managing Workspace" class="chapter  new-chapter" data-progress="5" style="left: 40.42553191489362%;"></a>
+    
+        <a href="../workspace/create_new_workspace.html" title="Create new workspace" class="chapter  " data-progress="5.1" style="left: 42.5531914893617%;"></a>
+    
+        <a href="../workspace/team_management.html" title="Team Management" class="chapter  " data-progress="5.2" style="left: 44.680851063829785%;"></a>
+    
+        <a href="../workspace/cloud_credential.html" title="Cloud Credential" class="chapter  " data-progress="5.3" style="left: 46.808510638297875%;"></a>
+    
+        <a href="../workspace/billing_&amp;_usage.html" title="Billing &amp; Usage" class="chapter  " data-progress="5.4" style="left: 48.93617021276596%;"></a>
+    
+        <a href="../workspace/api_token.html" title="API Token" class="chapter  " data-progress="5.5" style="left: 51.06382978723404%;"></a>
+    
+        <a href="../workspace/delete_a_workspace.html" title="Delete a workspace" class="chapter  " data-progress="5.6" style="left: 53.191489361702125%;"></a>
+    
+        <a href="../aws/README.html" title="Amazon Web Services" class="chapter  new-chapter" data-progress="6" style="left: 55.319148936170215%;"></a>
+    
+        <a href="../aws/shared_resource.html" title="Shared Resource" class="chapter  " data-progress="6.1" style="left: 57.4468085106383%;"></a>
+    
+        <a href="../aws/ec2/ec2.html" title="EC2" class="chapter  " data-progress="6.2" style="left: 59.57446808510638%;"></a>
+    
+        <a href="../aws/vpc/vpc.html" title="VPC" class="chapter  " data-progress="6.3" style="left: 61.702127659574465%;"></a>
+    
+        <a href="../aws/elb/elb.html" title="ELB" class="chapter  " data-progress="6.4" style="left: 63.829787234042556%;"></a>
+    
+        <a href="../aws/autoscaling/autoscaling.html" title="AutoScaling" class="chapter  " data-progress="6.5" style="left: 65.95744680851064%;"></a>
+    
+        <a href="../aws/rds/rds.html" title="RDS" class="chapter  " data-progress="6.6" style="left: 68.08510638297872%;"></a>
+    
+        <a href="../aws/example/README.html" title="Example" class="chapter  " data-progress="6.7" style="left: 70.2127659574468%;"></a>
+    
+        <a href="../state/README.html" title="State Modules" class="chapter  new-chapter" data-progress="7" style="left: 72.34042553191489%;"></a>
+    
+        <a href="../state/common/common.html" title="Common" class="chapter  " data-progress="7.1" style="left: 74.46808510638297%;"></a>
+    
+        <a href="../state/linux/linux.html" title="Linux" class="chapter  " data-progress="7.2" style="left: 76.59574468085107%;"></a>
+    
+        <a href="../state/meta/meta.html" title="Meta" class="chapter  " data-progress="7.3" style="left: 78.72340425531915%;"></a>
+    
+        <a href="../state/windows/windows.html" title="Windows" class="chapter  " data-progress="7.4" style="left: 80.85106382978724%;"></a>
+    
+        <a href="../reference/README.html" title="Reference" class="chapter  new-chapter" data-progress="8" style="left: 82.97872340425532%;"></a>
+    
+        <a href="../reference/faq.html" title="FAQ" class="chapter  " data-progress="8.1" style="left: 85.1063829787234%;"></a>
+    
+        <a href="../reference/terms.html" title="Terms" class="chapter  " data-progress="8.2" style="left: 87.23404255319149%;"></a>
+    
+        <a href="../reference/cli.html" title="CLI" class="chapter  " data-progress="8.3" style="left: 89.36170212765957%;"></a>
+    
+        <a href="../reference/ide_shortcut.html" title="IDE Shortcut" class="chapter  " data-progress="8.4" style="left: 91.48936170212765%;"></a>
+    
+        <a href="../reference/link_syntax.html" title="Link" class="chapter  " data-progress="8.5" style="left: 93.61702127659575%;"></a>
+    
+        <a href="../reference/reserved_keyword.html" title="Reserved Keyword" class="chapter  " data-progress="8.6" style="left: 95.74468085106383%;"></a>
+    
+        <a href="../reference/opsagent.html" title="OpsAgent" class="chapter  " data-progress="8.7" style="left: 97.87234042553192%;"></a>
+    
+        <a href="../reference/api.html" title="API" class="chapter  " data-progress="8.8" style="left: 100%;"></a>
+    
+    </div>
+</div>
+
+                <div class="page-inner">
+                
+                    <section class="normal" id="section-gitbook_33">
+                    
+                        <h1 id="import-cloudformation-template-preview-">Import CloudFormation template (Preview)</h1>
+<p>You can import CloudFormation templates into the IDE to visualize.</p>
+<p><img src="https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_stack_import_cfn.png" alt=""></p>
+<h2 id="prerequisite">Prerequisite</h2>
+<p>The current release has some prerequisite so that CloudFormation templates can be imported:</p>
+<ul>
+<li><p>The resource in template which is not supported by VisualOps will be ignored.</p>
+</li>
+<li><p>The template must not include any existing resource as follow:</p>
+</li>
+</ul>
+<pre><code><span class="hljs-tag">-</span> <span class="hljs-tag">AWS</span><span class="hljs-pseudo">::EC2</span><span class="hljs-pseudo">::EBS</span><span class="hljs-pseudo">::Volume</span>
+<span class="hljs-tag">-</span> <span class="hljs-tag">AWS</span><span class="hljs-pseudo">::EC2</span><span class="hljs-pseudo">::EIP</span>
+<span class="hljs-tag">-</span> <span class="hljs-tag">AWS</span><span class="hljs-pseudo">::EC2</span><span class="hljs-pseudo">::Instance</span>
+<span class="hljs-tag">-</span> <span class="hljs-tag">AWS</span><span class="hljs-pseudo">::EC2</span><span class="hljs-pseudo">::SecurityGroup</span>
+<span class="hljs-tag">-</span> <span class="hljs-tag">AWS</span><span class="hljs-pseudo">::ELB</span>
+<span class="hljs-tag">-</span> <span class="hljs-tag">AWS</span><span class="hljs-pseudo">::EC2</span><span class="hljs-pseudo">::NetworkAcl</span>
+<span class="hljs-tag">-</span> <span class="hljs-tag">AWS</span><span class="hljs-pseudo">::EC2</span><span class="hljs-pseudo">::CustomerGateway</span>
+<span class="hljs-tag">-</span> <span class="hljs-tag">AWS</span><span class="hljs-pseudo">::EC2</span><span class="hljs-pseudo">::NetworkInterface</span>
+<span class="hljs-tag">-</span> <span class="hljs-tag">AWS</span><span class="hljs-pseudo">::EC2</span><span class="hljs-pseudo">::InternetGateway</span>
+<span class="hljs-tag">-</span> <span class="hljs-tag">AWS</span><span class="hljs-pseudo">::EC2</span><span class="hljs-pseudo">::RouteTable</span>
+<span class="hljs-tag">-</span> <span class="hljs-tag">AWS</span><span class="hljs-pseudo">::EC2</span><span class="hljs-pseudo">::Subnet</span>
+<span class="hljs-tag">-</span> <span class="hljs-tag">AWS</span><span class="hljs-pseudo">::EC2</span><span class="hljs-pseudo">::VPC</span>
+<span class="hljs-tag">-</span> <span class="hljs-tag">AWS</span><span class="hljs-pseudo">::EC2</span><span class="hljs-pseudo">::VPNConnection</span>
+<span class="hljs-tag">-</span> <span class="hljs-tag">AWS</span><span class="hljs-pseudo">::EC2</span><span class="hljs-pseudo">::VPNGateway</span>
+<span class="hljs-tag">-</span> <span class="hljs-tag">AWS</span><span class="hljs-pseudo">::AutoScaling</span><span class="hljs-pseudo">::Group</span>
+<span class="hljs-tag">-</span> <span class="hljs-tag">AWS</span><span class="hljs-pseudo">::AutoScaling</span><span class="hljs-pseudo">::LaunchConfiguration</span>
+<span class="hljs-tag">-</span> <span class="hljs-tag">AWS</span><span class="hljs-pseudo">::AutoScaling</span><span class="hljs-pseudo">::ScalingPolicy</span>
+<span class="hljs-tag">-</span> <span class="hljs-tag">AWS</span><span class="hljs-pseudo">::CloudWatch</span><span class="hljs-pseudo">::CloudWatch</span>
+<span class="hljs-tag">-</span> <span class="hljs-tag">AWS</span><span class="hljs-pseudo">::RDS</span><span class="hljs-pseudo">::DBInstance</span>
+<span class="hljs-tag">-</span> <span class="hljs-tag">AWS</span><span class="hljs-pseudo">::RDS</span><span class="hljs-pseudo">::DBSubnetGroup</span>
+</code></pre><h2 id="howto">Howto</h2>
+<ul>
+<li><p>If you want to import existing resource template, you need to convert it to a complete new component like following figure and fill in the connection between two component such as availability zone, subnet id so that our algorithm can find out the architecture of your template. </p>
+<p>  <img src="https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_stack_importcf_sample1.png" alt="">
+  <img src="https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_stack_importcf_sample2.png" alt=""></p>
+</li>
+</ul>
+<h2 id="common-errors">Common Errors</h2>
+<p>The following lists the common errors you may have, which leads to failed to import the CloudFormation templates:</p>
+<pre><code>- The availability zone <span class="hljs-keyword">of</span> <span class="hljs-keyword">the</span> volume <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> match <span class="hljs-keyword">with</span> corresponed attached instance.
+- The region you want <span class="hljs-keyword">to</span> import do <span class="hljs-keyword">not</span> match <span class="hljs-keyword">the</span> availability zone you describe <span class="hljs-keyword">in</span> <span class="hljs-keyword">the</span> template
+- Your template have more than <span class="hljs-number">2</span> VPC component
+- One <span class="hljs-keyword">of</span> <span class="hljs-keyword">the</span> component <span class="hljs-keyword">is</span> missing AWS required <span class="hljs-keyword">property</span> like subnet <span class="hljs-keyword">is</span> missing <span class="hljs-keyword">property</span> VpcId
+- More than <span class="hljs-number">2</span> EIP can <span class="hljs-keyword">not</span> associate <span class="hljs-keyword">to</span> <span class="hljs-keyword">the</span> same instance <span class="hljs-keyword">without</span> specify specific private ip address
+- Fn::FindInMap need <span class="hljs-keyword">to</span> be correct <span class="hljs-keyword">if</span> use <span class="hljs-keyword">it</span> <span class="hljs-keyword">to</span> match corresponding AMI
+- Use Fn::GetAtt <span class="hljs-keyword">to</span> <span class="hljs-keyword">get</span> a runtime properity(For example AvailabilityZone <span class="hljs-keyword">of</span> subnet) will casuse an <span class="hljs-keyword">error</span>
+</code></pre>
+                    
+                    </section>
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../stack/import_existing_stack.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../app/README.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/mode-javascript.js"></script>
+        <script src="../gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+        <script src="../gitbook/app.js"></script>
+        
+    </body>
+</html>
