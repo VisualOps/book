@@ -37,6 +37,7 @@
    * [Billing & Usage](workspace/billing_&_usage.md)
    * [API Token](workspace/api_token.md)
    * [Delete a workspace](workspace/delete_a_workspace.md)
+   * [Transfer Stack / App between Workspaces](workspace/transfer_stack__app_between_workspaces.md)
 * [Amazon Web Services](aws/README.md)
    * [Shared Resource](aws/shared_resource.md)
    * [EC2](aws/ec2/ec2.md)
