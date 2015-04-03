@@ -38,6 +38,8 @@ manage a file
 
 	>note: http, https and ftp protocols are supported
 
+	>note: `Links` - @{...} - in files provided using a remote URI won't be rendered.
+
 * **`absent`** (*optional*): ensure the file is absent, by default ***`false`***
 
 	>note: If True, all other parameters are ignored

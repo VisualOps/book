@@ -47,6 +47,13 @@ Run a container from a remote image
 			/host/path: /mount/point
 			/host/path: /mount/point/read/only:ro
 
+*   **`devices`** (*optional*): List of devices to attach (if not specified in `Dockerfile`). (specify :rwm to set read, write and mknode rights limitation)
+
+		example:
+			/dev/sdhost: /dev/sdcontainer
+			/dev/sda:    /dev/xvda
+                        /dev/xvdf:   /dev/xvdf:r
+
 *   **`mem_limit`** (*optional*): Memory size limit (if not specified in `Dockerfile`)
 
 		example:
@@ -70,9 +77,12 @@ Run a container from a remote image
 			6000/tcp: 6000 (default ip: 0.0.0.0)
 			80: 6666 (default protocol: tcp)
 
-*   **`files`** (*optional*): list of persistent files
-
 *   **`force`** (*optional*): Force (re)build container on each round
+
+		note:
+			Use this option if you edit any other parameter. Don't forget to disable it once a round has succeed.
+
+*   **`files`** (*optional*): list of persistent files
 
 		example:
 			/etc/nginx/nginx.conf : *content*

@@ -37,6 +37,13 @@ Ensure that a container from the given name is running. If not, run it.
 			/host/path: /mount/point
 			/host/path: /mount/point/read/only:ro
 
+*   **`devices`** (*optional*): List of devices to attach (if not specified in `Dockerfile`). (specify :rwm to set read, write and mknode rights limitation)
+
+		example:
+			/dev/sdhost: /dev/sdcontainer
+			/dev/sda:    /dev/xvda
+                        /dev/xvdf:   /dev/xvdf:r
+
 *   **`mem_limit`** (*optional*): Memory size limit (if not specified in `Dockerfile`)
 
 		example:
@@ -50,8 +57,6 @@ Ensure that a container from the given name is running. If not, run it.
 		example:
 			0
 
-*   **`force`** (*optional*): Force (re)build container on each round
-
 *   **`port_bindings`** (*optional*): List of ports to expose on host system. Maps containers port/protocol to host listening ip:port
 
 		note:
@@ -62,9 +67,14 @@ Ensure that a container from the given name is running. If not, run it.
 			6000/tcp: 6000 (default ip: 0.0.0.0)
 			80: 6666 (default protocol: tcp)
 
-*   **`watch`** (*optional*): watch a list of files, restart the container if any of them is modified
+*   **`force`** (*optional*): Force (re)build container on each round.
+
+		note:
+			Use this option if you edit any other parameter. Don't forget to disable it once a round has succeed.
+
+*   **`files`** (*optional*): list of persistent files
 
 		example:
-			/etc/nginx/nginx.conf
-			/etc/my.cnf
+			/etc/nginx/nginx.conf : *content*
+			/etc/my.cnf           : *content*
 				

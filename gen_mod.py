@@ -3,7 +3,7 @@
 import json
 import urllib2
 
-ORG="VisualOps"
+ORG="MadeiraCloud"
 TAG="v2015-03-26"
 
 # file
