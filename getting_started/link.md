@@ -16,9 +16,6 @@ There are also some interesting and unique uses:
 
 Link also supports [Jinja2](http://jinja.pocoo.org/docs/). Combined with AutoScaling, it has the abiity to be extremely powerful:
 
-    {% for ip in '@{asg_group.PrivateIpAddress}'.split(',') %}
-    server.{{ loop.index }}={{ ip }}:2888:3888
-    {% endfor %}
 
 Which will be:
 
@@ -27,4 +24,3 @@ Which will be:
     server.3=10.0.0.6:2888:3888
 
 Further explanation can be found [here](../reference/link_syntax.md).
- 
