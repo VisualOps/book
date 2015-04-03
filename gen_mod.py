@@ -3,8 +3,8 @@
 import json
 import urllib2
 
-ORG="MadeiraCloud"
-TAG="v2014-07-18"
+ORG="VisualOps"
+TAG="v2015-03-26"
 
 # file
 FILE_SUMMARRY	= './SUMMARRY.md'
@@ -52,12 +52,10 @@ with open('./SUMMARY.md', 'w') as f:
        * [App](getting_started/app.md)
        * [(Instance) State](getting_started/instance_state.md)
        * [Link](getting_started/link.md)
-       * [Account Setting](getting_started/user_bar.md)
-       * [CLI](getting_started/cli.md)
        * [Workspace](getting_started/workspace.md)
+       * [CLI](getting_started/cli.md)
    * [Setup](getting_started/setup.md)
        * [Amazon Web Services](getting_started/amazon_web_services.md)
-       * [OpenStack](getting_started/openstack.md)
    * [Create Your First App](getting_started/create_your_first_app.md)
        * [Design](getting_started/design.md)
        * [Configure](getting_started/configure.md)
@@ -77,6 +75,13 @@ with open('./SUMMARY.md', 'w') as f:
    * [Reload States](app/reload_states.md)
    * [Forget App](app/forget_app.md)
 * [Managing Workspace](workspace/README.md)
+   * [Create new workspace](workspace/create_new_workspace.md)
+   * [Team Management](workspace/team_management.md)
+   * [Cloud Credential](workspace/cloud_credential.md)
+   * [Billing & Usage](workspace/billing_&_usage.md)
+   * [API Token](workspace/api_token.md)
+   * [Delete a workspace](workspace/delete_a_workspace.md)
+   * [Transfer Stack / App between Workspaces](workspace/transfer_stack__app_between_workspaces.md)
 * [Amazon Web Services](aws/README.md)
    * [Shared Resource](aws/shared_resource.md)
    * [EC2](aws/ec2/ec2.md)
@@ -86,7 +91,7 @@ with open('./SUMMARY.md', 'w') as f:
        * [EBS Volume](aws/ec2/ebs_volume.md)
        * [Security Group](aws/ec2/security_group.md)
        * [Keypair](aws/ec2/keypair.md)
-       * [Elastic IP](aws/ec2/ec2/elastic_ip.md)
+       * [Elastic IP](aws/ec2/elastic_ip.md)
    * [VPC](aws/vpc/vpc.md)
        * [Subnet](aws/vpc/subnet.md)
        * [Route Table](aws/vpc/route_table.md)
@@ -117,7 +122,9 @@ with open('./SUMMARY.md', 'w') as f:
            * [VPC with Public and Private Subnets and Hardware VPN Access](aws/example/vpc_with_public_and_private_subnets_and_hardware_vpn_access.md)
            * [VPC with a Private Subnet Only and Hardware VPN Access](aws/example/vpc_with_a_private_subnet_only_and_hardware_vpn_access.md)
        * [Video](aws/example/video.md)
-* [OpenStack](openstack/README.md)
+* [Apache Mesos](mesos/README.md)
+   * [Create the stack](mesos/create_the_stack.md)
+   * [Customize the stack](mesos/customize_the_stack.md)
 %s
 * [Reference](reference/README.md)
    * [FAQ](reference/faq.md)

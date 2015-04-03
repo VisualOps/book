@@ -8,7 +8,7 @@ To create a Read Replica:
 - click the bottom of the DB instance and drag-n-drop to create
 - click `Apply` to apply the changes
 
-![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_canvas_rds_replica.png)
+![](https://raw.githubusercontent.com/VisualOps/book-image/master/ide_canvas_rds_replica.png)
 
 To promote a Read Replica to DB instance:
 - open the running app
@@ -16,4 +16,4 @@ To promote a Read Replica to DB instance:
 - select the Read Replica and click `Promote Read Replica`, and then `Confirm`
 - click `Apply` to apply the changes
 
-![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_property_rds_replica.png)
+![](https://raw.githubusercontent.com/VisualOps/book-image/master/ide_property_rds_replica.png)

@@ -4,8 +4,8 @@ The [Availability Zones](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/usin
 
 You can add AZs from the resource panel of the IDE:
 
-![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_resource_az.png)
+![](https://raw.githubusercontent.com/VisualOps/book-image/master/ide_resource_az.png)
 
 You can switch to any other available AZ on the right panel before running the Stack:
 
-![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_property_az_switch.png)
+![](https://raw.githubusercontent.com/VisualOps/book-image/master/ide_property_az_switch.png)

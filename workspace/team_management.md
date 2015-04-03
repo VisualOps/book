@@ -19,4 +19,4 @@ Both can:
 - view API token
 - view cloud usage report of the workspace
 
-![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_workspace_team.jpg)<br />
+![](https://raw.githubusercontent.com/VisualOps/book-image/master/ide_workspace_team.jpg)<br />

@@ -7,7 +7,7 @@
 
 Then, **VisualOps manages your app 24/7 to ensure that the app always run in the desired state, by continually monitor the infrastructure and the app, to instantly spot and fix any drift**.
 
-![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/workflow.gif)
+![](https://raw.githubusercontent.com/VisualOps/book-image/master/workflow.gif)
 
 ### Concept
 
@@ -27,7 +27,7 @@ In VisualOps:
 
 ### IDE
 
-![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_stack_all.png)<br />
+![](https://raw.githubusercontent.com/VisualOps/book-image/master/ide_stack_all.png)<br />
 
 VisualOps IDE is the visual console for you to build and manage the cloud application.
 

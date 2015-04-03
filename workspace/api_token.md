@@ -9,4 +9,4 @@ If you are `Admin`, you can:
 
 All team member can view the token and use for API calls.
 
-![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_workspace_token.png)<br />
+![](https://raw.githubusercontent.com/VisualOps/book-image/master/ide_workspace_token.png)<br />

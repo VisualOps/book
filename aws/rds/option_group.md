@@ -4,4 +4,4 @@ An option group can specify features, called options, that are available for a p
 
 Note: Option group is VPC specific.
 
-![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_property_rds_og.png)
+![](https://raw.githubusercontent.com/VisualOps/book-image/master/ide_property_rds_og.png)

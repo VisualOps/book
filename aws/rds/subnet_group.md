@@ -6,6 +6,6 @@ To use RDS in VPC, you need to create subnet group first:
 
 Before creating the subnet group, make sure there are at least two AZs in the canvas, then goto the resource panel and drag-n-drop the subnet group to the canvas:
 
-![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_resource_subnet_group.png)
+![](https://raw.githubusercontent.com/VisualOps/book-image/master/ide_resource_subnet_group.png)
 
 > NOTE: If you are using SQL Server Mirroring with a SQL Server DB instance in a VPC, you must create a DB subnet group that has 3 subnets in distinct Availability Zones.

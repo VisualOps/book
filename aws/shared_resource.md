@@ -10,10 +10,10 @@ You can manage the following resources in the resource panel:
 - RDS DB Parameter Groups
 - RDS DB Snapshot
 
-![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_resource_panel_shared_resource.png)
+![](https://raw.githubusercontent.com/VisualOps/book-image/master/ide_resource_panel_shared_resource.png)
 
 
 
 These are the resources that can be shared across stacks/apps. If a stack/app specifies a shared resource, which no longer exists, the operation on the stack/app (such as `Run Stack`, `App Update`) will fail. So, caution to delete the shared resources.
 
-![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_resource_server_certificate.png)
+![](https://raw.githubusercontent.com/VisualOps/book-image/master/ide_resource_server_certificate.png)

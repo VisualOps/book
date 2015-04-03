@@ -6,14 +6,14 @@ Images represent the [EC2 Instances](http://aws.amazon.com/ec2/instance-types/) 
 - `My`: the private AMIs in your AWS account
 - `Favorite`: your collection of favorite community AMIs
 
-![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_stack_ami_menu.png)
+![](https://raw.githubusercontent.com/VisualOps/book-image/master/ide_stack_ami_menu.png)
 
 #### Manage Favorite AMIs
 
 You can get an AMI from the community by clicking in the 'Browse Community Images' button<br />
-![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_stack_ami_community.png)
+![](https://raw.githubusercontent.com/VisualOps/book-image/master/ide_stack_ami_community.png)
 
 Star to add into the collection:
-![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_resource_image_add_favorite.png)
+![](https://raw.githubusercontent.com/VisualOps/book-image/master/ide_resource_image_add_favorite.png)
 
 Unstar to remove:

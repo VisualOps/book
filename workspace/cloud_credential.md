@@ -5,13 +5,13 @@ Each workspace can set up one Cloud Credential. By default, workspace is in "Dem
 
 Only admin of a workspace has access to Cloud Credential section.
  
-![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_workspace_credential_demo.png)
+![](https://raw.githubusercontent.com/VisualOps/book-image/master/ide_workspace_credential_demo.png)
 
 ### 1. Set up Cloud Access Credential
 
 In demo mode, open Workspace Setting > Cloud Access Credential, and click "Set up Cloud Access Credential".
 
-![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_workspace_credential_add.png)
+![](https://raw.githubusercontent.com/VisualOps/book-image/master/ide_workspace_credential_add.png)
 
 In the following popup, give your credential a freindly name in Credential Alias. And then provide the access credential of your AWS account. Note that the credential should at least have read access to AWS EC2 resources. To run app, write access is required.
 
@@ -19,7 +19,7 @@ In the following popup, give your credential a freindly name in Credential Alias
 
 You can update your cloud access credential by openning the dropdown from upper right corner of the credential item.
 
-![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_workspace_credential_dropdown.png)
+![](https://raw.githubusercontent.com/VisualOps/book-image/master/ide_workspace_credential_dropdown.png)
 
 ### 3. Delete Cloud Access Credential 
 

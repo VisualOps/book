@@ -11,7 +11,7 @@ Next, we are going to use the states editor in the IDE to configure the software
 #### Enable/Disable VisualOps on the stack
 In order to configure the instance state, the stack needs to have VisualOps enabled. To enable VisualOps on a stack, ensure the switch on the top-right of the central canevas is turned on (green color).
 
-![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/visualops_on.png)
+![](https://raw.githubusercontent.com/VisualOps/book-image/master/visualops_on.png)
 
 - when VisualOps is on, you cannot edit the instance userdata, and the previous userdata will be discarded. [A shell script](https://github.com/MadeiraCloud/OpsAgent/blob/master/scripts/userdata.sh) will be automatically filled in the userdata before the instance launches, allowing us to deploy `opsagent`.
 - when VisualOps is off, you can edit the instance userdata, but this means `opsagent` wil not get installed, thus no instance state will be executed.
@@ -22,7 +22,7 @@ In order to configure the instance state, the stack needs to have VisualOps enab
 
 To open the state editor, click on the instance you want to edit the states, then select the "State" tab on the right panel.
 
-![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/states_editor.png)
+![](https://raw.githubusercontent.com/VisualOps/book-image/master/states_editor.png)
 
 Click on "Add a State" to add your first state.
 
@@ -307,4 +307,4 @@ Click on "Add a State" to add your first state.
 	cwd: `/var/www`<br />
 	if-path-absent: `/dev/shm/ghost_starter.done`
 
-![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/stack_states.png)
+![](https://raw.githubusercontent.com/VisualOps/book-image/master/stack_states.png)

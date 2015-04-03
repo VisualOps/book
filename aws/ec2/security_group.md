@@ -25,7 +25,7 @@ All instances added to this Stack will automatically be placed in this Security 
 
 You can find and edit the Security Groups in the Stack or the instance properties (right panel)
 
-![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_stack_sgedit.png)
+![](https://raw.githubusercontent.com/VisualOps/book-image/master/ide_stack_sgedit.png)
 
 The Default Security Group already contains one rule, allowing all incoming TCP traffic on port 22 (SSH)<br />
 This rule is mandatory if you want to manage your instance but you can reduce the IP range if you want to limit the users who can manage your instance
@@ -40,7 +40,7 @@ Jump two topics ahead if you want to define your rules now or follow this tutori
 
 We created two custom Security Groups for this example
 
-![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_stack_sgcust.png)
+![](https://raw.githubusercontent.com/VisualOps/book-image/master/ide_stack_sgcust.png)
 
 #### Associate a Custom Security Group
 Once the custom Security Group is created, you can now add the instances inside the Security Group<br />
@@ -50,7 +50,7 @@ You should see the colored square on the bottom left of your instance change acc
 Note that an instance can be in several security groups (including the DefaultSG)<br />
 See [AWS Security Groups documentation](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-network-security.html) for more details about Security Groups themselves
 
-![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_stack_sginst.png)
+![](https://raw.githubusercontent.com/VisualOps/book-image/master/ide_stack_sginst.png)
 
 #### Define Security Rules
 You are now ready to create rules in your Security Groups
@@ -160,9 +160,9 @@ We defined the following rules:
 </tbody>
 </table>
 
-![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_stack_sgc1.png)
+![](https://raw.githubusercontent.com/VisualOps/book-image/master/ide_stack_sgc1.png)
 
-![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_stack_sgc2.png)
+![](https://raw.githubusercontent.com/VisualOps/book-image/master/ide_stack_sgc2.png)
 
 Note that you can also link the blue diamonds of each instance to create security rules
 

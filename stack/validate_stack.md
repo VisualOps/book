@@ -6,5 +6,5 @@ This feature will use <a href="https://aws.amazon.com/premiumsupport/trustedadvi
 
 You can also review your stack when starting it (a stack with actual errors can not be launched)
 
-![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_stack_valid.png)
+![](https://raw.githubusercontent.com/VisualOps/book-image/master/ide_stack_valid.png)
 

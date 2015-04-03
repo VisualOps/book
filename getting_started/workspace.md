@@ -17,8 +17,8 @@ Each workspace can be configured with separate:
 > **NOTE**: This means that ***all apps and resources in a workspace share the same credential, bill and API token***.
 
 The workspace switch is located at the left-top corner in the IDE.
-![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_workspace_switch.png)<br />
+![](https://raw.githubusercontent.com/VisualOps/book-image/master/ide_workspace_switch.png)<br />
 
 
-![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_workspace.png)<br />
+![](https://raw.githubusercontent.com/VisualOps/book-image/master/ide_workspace.png)<br />
 

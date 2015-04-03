@@ -5,7 +5,7 @@
 Supposing you have a WordPress server to point to a DB server, you can specify the following in `wp-config.php`:<br />
 `define('DB_HOST', '@{db_server.PrivateIpAddress}');`, which will be rendered to: `define('DB_HOST', '10.0.0.4');` upon execution.
 
-![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_pointer.png)
+![](https://raw.githubusercontent.com/VisualOps/book-image/master/ide_pointer.png)
 
 As shown here, Link is similar to Chef Databag or Salt Pillar. However it is far clearer, therefore easier to understand and subsequently use.
 

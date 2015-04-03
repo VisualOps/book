@@ -11,4 +11,4 @@ When `Admin` deletes a workspace, the following will happen:
 - No furthure cost, though you may need to pay for the cost occurred
 - cloud access credential and billing information will be removed from VisualOps
 
-![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_workspace_delete.png)<br />
+![](https://raw.githubusercontent.com/VisualOps/book-image/master/ide_workspace_delete.png)<br />

@@ -11,7 +11,7 @@ It is mainly composed of the following parts:
 - `Tool Bar`
 - `Status Bar`
 
-![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_app_all.png)
+![](https://raw.githubusercontent.com/VisualOps/book-image/master/ide_app_all.png)
 
 
 #### Resource Panel
@@ -21,25 +21,25 @@ To refresh the availabel resources, just click the reload button.
 
 > Note: The resource panel in app tab is folded by default.
 
-![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_resource_panel.png)
+![](https://raw.githubusercontent.com/VisualOps/book-image/master/ide_resource_panel.png)
 
 #### Property Panel
 You can display the properties of each element of your App from this screen
 
 In our example, simply click on an instance to display the properties on the right panel
 
-![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_app_inst.png)
+![](https://raw.githubusercontent.com/VisualOps/book-image/master/ide_app_inst.png)
 
 #### State Panel
 The state panel allows you to monitor the states currently running, the ones that have succeed or failed, as well as the agent status, on each instance
 
 Note that you can get a more detailed output of the result and the action of each state, by clicking on the `View details` button
 
-![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_app_states.png)
+![](https://raw.githubusercontent.com/VisualOps/book-image/master/ide_app_states.png)
 
 #### Tool Bar
 
-![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_app_toolbar.png)<br />
+![](https://raw.githubusercontent.com/VisualOps/book-image/master/ide_app_toolbar.png)<br />
 The following buttons are place at the tool bar for managing the app:
 
 - Edit the app

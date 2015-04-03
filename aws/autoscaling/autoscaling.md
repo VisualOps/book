@@ -1,7 +1,7 @@
 # AutoScaling
 
 
-![](https://raw.githubusercontent.com/MadeiraCloud/docs-image/master/ide_stack_autoscaling.png)
+![](https://raw.githubusercontent.com/VisualOps/book-image/master/ide_stack_autoscaling.png)
 
 The [Auto Scaling Groups](http://aws.amazon.com/autoscaling/) are containers with an automatically set number of instances.
 
