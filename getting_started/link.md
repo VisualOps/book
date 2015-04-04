@@ -16,6 +16,9 @@ There are also some interesting and unique uses:
 
 Link also supports [Jinja2](http://jinja.pocoo.org/docs/). Combined with AutoScaling, it has the abiity to be extremely powerful:
 
+    {% for ip in '@{asg_group.PrivateIpAddress}'.split(',') %}
+    server.{{ loop.index }}={{ ip }}:2888:3888
+    {% endfor %}
 
 Which will be:
 
