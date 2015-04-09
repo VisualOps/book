@@ -10,7 +10,7 @@
 VisualOps is created with the goal of being "easy to understand" alongside giving you "total control". We believe these two factors are integral to any level of user adopting a new technology. Whether you are running an individual project, startup, ISV, enterprise or anything in between. VisualOps is ideal for managing both small setups with just a handful of instances as well as highly complex environments with thousands.
 
 Download other formats:
-- [PDF](https://www.gitbook.io/download/pdf/book/gnep/visualops?lang=)
-- [ePub](https://www.gitbook.io/download/epub/book/gnep/visualops?lang=)
-- [Mobi](https://www.gitbook.io/download/mobi/book/gnep/visualops?lang=)
-- [Github](https://github.com/VisualOps/book)
+- [PDF](http://www.gitbook.io/download/pdf/book/gnep/visualops?lang=)
+- [ePub](http://www.gitbook.io/download/epub/book/gnep/visualops?lang=)
+- [Mobi](http://www.gitbook.io/download/mobi/book/gnep/visualops?lang=)
+- [Github](http://github.com/VisualOps/book)
