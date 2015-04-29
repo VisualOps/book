@@ -75,6 +75,6 @@ Ensure that a container from the given name is running. If not, run it.
 *   **`files`** (*optional*): list of persistent files
 
 		example:
-			/etc/nginx/nginx.conf : *content*
-			/etc/my.cnf           : *content*
+			/etc/nginx/nginx.conf : /local/file/path
+			/etc/my.cnf           : /local/file/path
 				

@@ -33,14 +33,4 @@ Runs a Mesos Master instance
 
 		example:
 			marathon
-
-*   **`marathon username`** (*optional*): Username for access to Marathon (if selected as framework)
-
-		example:
-			user
-
-*   **`marathon password`** (*required*): Password for access to Marathon (if selected as framework)
-
-		example:
-			pass
 			
