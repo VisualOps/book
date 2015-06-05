@@ -139,5 +139,5 @@
    * [Reserved Keyword](reference/reserved_keyword.md)
    * [OpsAgent](reference/opsagent.md)
    * [API](reference/api.md)
-* [Terms of Service](reference/terms_of_service.md)
+* [Terms of Service](./terms_of_service.md)
 
