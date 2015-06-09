@@ -18,7 +18,7 @@ In order to configure the instance state, the stack needs to have VisualOps enab
 
 #### Use `State Editor` to edit instance state
 
-> IDE supports a series of shortcuts to help you improve your productivity. Please see the [Shortcut section](../reference/shortcut.md) for more.
+> IDE supports a series of shortcuts to help you improve your productivity. Please see the [Shortcut section](../reference/ide_shortcut.md) for more.
 
 To open the state editor, click on the instance you want to edit the states, then select the "State" tab on the right panel.
 
