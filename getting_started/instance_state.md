@@ -6,7 +6,7 @@ A (instance) state is a configuration statement of an instance. It is defined at
 ![](https://raw.githubusercontent.com/VisualOps/book-image/master/ide_stack_states.png)
 
 ##### Modules
-The complete state modules can be found [here](../state_modules/README.md).
+The complete state modules can be found [here](../state/README.md).
 
 ##### Jinja syntax
 
