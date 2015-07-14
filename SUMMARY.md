@@ -30,6 +30,7 @@
    * [Save App to Stack](app/save_app_to_stack.md)
    * [Reload States](app/reload_states.md)
    * [Forget App](app/forget_app.md)
+   * [Tag management](app/tag_management.md)
 * [Managing Workspace](workspace/README.md)
    * [Create new workspace](workspace/create_new_workspace.md)
    * [Team Management](workspace/team_management.md)
