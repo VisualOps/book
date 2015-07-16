@@ -1,14 +1,14 @@
 # Tag management
 
-You can now manage resource tag at VisualOps ide.
+You can now manage resource tags using VisualOps IDE.
 
-- Click any resource on stack or app, click "Edit Tags" and it will open tags manager
+- Click on any resource in stack or app, then click on "Edit Tags", and it will open the tags manager
 
 ![](https://raw.githubusercontent.com/VisualOps/book-image/master/ide_tag_management_property.png)
 
 ![](https://raw.githubusercontent.com/VisualOps/book-image/master/ide_tag_management_panel.png)
 
-- User filter to filter resources you want to select
+- Use 'filter' to filter the resources you want to select
 
 ![](https://raw.githubusercontent.com/VisualOps/book-image/master/ide_tag_management_filter_select.png)
 
@@ -20,12 +20,12 @@ You can now manage resource tag at VisualOps ide.
 
 ![](https://raw.githubusercontent.com/VisualOps/book-image/master/ide_tag_management_input.png)
 
-- When you close the tag manager and click the resource you tag before, you can see the tags on property panel
+- When you close the tag manager and click on the resource you tag created before, you can see the tags on the property panel
 
 ![](https://raw.githubusercontent.com/VisualOps/book-image/master/ide_tag_management_result.png)
 
-- The another way to see where your resource is using filter on the top of ide, this will be a useful feature when you have ton of resources
+- Another way to see where your resources are using a filter is on the top of IDE, which may be useful in case you have a lot of resources
 
 ![](https://raw.githubusercontent.com/VisualOps/book-image/master/ide_tag_management_filter_result.png)
 
-- Save when you are in stack mode or update in app mode then you can persist your tags
+- "Save" when you are in stack mode, or "Update" in app mode to apply your tags
