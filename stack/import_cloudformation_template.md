@@ -4,10 +4,10 @@ You can import CloudFormation templates into the IDE to visualize.
 
 ## Usage
 
-##### Step 1: Select a CloudFormation templates file  
+##### Step 1: Select a CloudFormation template file  
 ![](https://raw.githubusercontent.com/VisualOps/book-image/master/ide_stack_import_cfn.png)
 
-##### Step 2: Set parameters  
+##### Step 2: Set parameters, then click "Import"  
 ![](https://raw.githubusercontent.com/VisualOps/book-image/master/ide_stack_import_cfn_parameter.png)
 
 ##### Result:  
