@@ -2,7 +2,18 @@
 
 You can import CloudFormation templates into the IDE to visualize.
 
+## Usage
+
+##### Step 1: Select a CloudFormation templates file  
 ![](https://raw.githubusercontent.com/VisualOps/book-image/master/ide_stack_import_cfn.png)
+
+##### Step 2: Set parameters  
+![](https://raw.githubusercontent.com/VisualOps/book-image/master/ide_stack_import_cfn_parameter.png)
+
+##### Result:  
+![](https://raw.githubusercontent.com/VisualOps/book-image/master/ide_stack_import_cfn_result.png)
+
+> ** NOTE **: ***VisualOps IDE only support convert CloudFormation template to PNG currently.***
 
 ## Prerequisite
 The current release has some prerequisite so that CloudFormation templates can be imported:

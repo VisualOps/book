@@ -23,6 +23,7 @@
    * [Clone Resource](stack/clone_resource.md)
    * [Import Existing Stack](stack/import_existing_stack.md)
    * [Import CloudFormation template](stack/import_cloudformation_template.md)
+   * [Export CloudFormation template](stack/export_cloudformation_template.md)
 * [Managing App](app/README.md)
    * [Edit Running App](app/edit.md)
    * [Import Existing VPC](app/import.md)
