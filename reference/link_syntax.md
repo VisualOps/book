@@ -12,7 +12,7 @@ Note that Jinja is a Python template engine, which means that the code interpret
 
 For example, if you want to iterate over the list of private IPs of an instances group (using `@{xxx.PrivateIpAddress}`), you could do it this way:
 
-	{% for ip in @{xxx.PrivateIpAddress}.split(",") %}
+	{% for ip in "@{xxx.PrivateIpAddress}".split(",") %}
 	You can use {{ ip }} here
 	{% endfor %}
 
